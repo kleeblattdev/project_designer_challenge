@@ -12,21 +12,28 @@
     <!-- ================== Header ================== -->
 
     <header>
-        <section>
-            <img id="logo" src="./assets/img/logo.svg" alt="one line elephant logo of The Design Project ">
+        <img id="logo" src="./assets/img/logo.svg" alt="one line elephant logo of The Design Project ">
+
+        <section id="logoText">
             <h1>TheDesignProject <span id="subtitle">by a WebDesigner</span></h1>
         </section>
-        
-        <section>
-            <h2>How to become a better designer?</h2>
-            <p>A challenge to improve your product design skills by solving problems in your daily life.🚀</p>
-            <p id="scroll">SCROLL TO SEE MORE —</p>
+
+        <section id="titelText">
+            <article>
+                <h2>How to become a better designer?</h2>
+                <p>A challenge to improve your product design skills by solving problems in your daily life. 🚀</p>
+            </article>
+            <img id="fallingMan" src="./assets/img/ilustracion_people.png" alt="falling manniquin">
         </section>
+        <p id="scroll">SCROLL TO SEE MORE —</p>
     </header>
 
     <!-- ================== Main ================== -->
 
     <main>
+
+        <section id="projects">
+        </section>
     <!-- ================== Main - Intro ================== -->
 
         <section id="intro">
@@ -38,8 +45,8 @@
     <!-- ================== Main - Learn ================== -->
         <section id="learn">
             <article id="learnStart">
-                <h3>Start with asking</h3>
-                <p>why You will start seeing things differently and coming up with more effective ways of achieving goals.</p>
+                <h3>Start with asking why</h3>
+                <p>You will start seeing things differently and coming up with more effective ways of achieving goals.</p>
             </article>
             <article id="learnIdea">
                 <h3>Your ideas will have more value</h3>
@@ -53,39 +60,38 @@
                 <h3>Share and show your work</h3>
                 <p>As designers, we are often afraid of showing work that’s not finished or doesn’t look perfect. You will learn to accept feedback and learn from it.</p>
             </article>
-        </section>
-    <!-- ================== Main - Ready ================== -->
-        <section id="ready">
+            <article id="ready">
                 <h2>Are you ready? Let’s go!!</h2>
                 <p>The challenge lasts 30 days. On each of those days you will have to create a solution to any problem you yourself are facing and show the result to the community.</p>
+            </article>
         </section>
     <!-- ================== Main - Steps ================== -->
         <section id="steps">
+            <div id="stepImgOne"></div>
             <article id="stepOne">
-                <div class="stepImg"></div>
                 <p class="step">01</p>
-                <p>👀</p>
+                <p class="emoji">👀</p>
                 <h3>Find your problem</h3>
                 <p>It has to be a problem that’s personally affecting or affected you, like finding your keys, calling a taxi or even remembering something. Open your eyes, look around you carefully and pay close attention to your surroundings.</p>
             </article>
+            <div id="stepImgTwo"></div>
             <article id="stepTwo">
-                <div class="stepImg"></div>
                 <p class="step">02</p>
-                <p>✍️</p>
+                <p class="emoji">✍️</p>
                 <h3>Think about the solution</h3>
                 <p>It's time to look for solutions. What can you do to solve these problems? It's time to think out of the box, grab your notebook and start writing down all the ideas that come to mind.</p>
             </article>
+            <div id="stepImgThree"></div>
             <article id="stepThree">
-                <div class="stepImg"></div>
                 <p class="step">03</p>
-                <p>👨‍💻</p>
+                <p class="emoji">👨‍💻</p>
                 <h3>Design your proposal</h3>
                 <p>How can design help solve your problem? It's time to think about features and functionality, and then start designing. Don’t forget to always ask yourself: Would I actually use this?</p>
             </article>
+            <div id="stepImgFour"></div>
             <article id="stepFour">
-                <div class="stepImg"></div>
                 <p class="step">04</p>
-                <p>🏄‍♂️</p>
+                <p class="emoji">🏄‍♂️</p>
                 <h3>Share your work</h3>
                 <p>Share your design on instagram or dribbble with the hashtag #thedesignproject Remember to explain what the problem was, how you came up with the solution and how the design achieves it. Find out what people have to say about it.</p>
             </article>
@@ -108,10 +114,10 @@
         <form action="">
             <label for="mail" hidden>E-mail</label>
             <input type="email" name="mail" id="mail" placeholder="Write your email here">
-            <input type="submit" value="Subscribe">
+            <input type="submit" value="Subscribe" id="subscribe">
         </form>
 
-        <p>Created with Love by a Webdesigner ❤️ </p>
+        <p id="signature">Created with Love by a Webdesigner ❤️ </p>
 
     </footer>
     
