@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 0.8rem;
+    }
+    
+    h2{
+        font-size: 2.2rem;
+    }
+
+    h3{
+        font-size: 0.8rem;
+    }
+    
+    p{
+        line-height: 1.5em;
+        font-size: 0.8rem;
+    }
+    
+    .step{
+        font-size: 2rem;
+    }
+    
+    .emoji{
+        font-size: 2rem;
+    }
+
+    header{
+        #titelText{
+            article{
+                padding-right: 0px;
+            }
+        }
+        #scroll{
+        margin: 0 10vw;
+        padding-bottom: 3vh;
+        }
+    }
+
+    #intro{
+        margin: 2vh 4vw;
+        p{
+            padding-right: 10vw;
+        }
+        h2:last-of-type{
+            padding-right: 20vw;
+            margin-top: 0;
+        }
+    }
+
+    #learn{
+        gap:0;
+        #ready{
+            margin-top: 2vh;
+            p{
+                padding: 0 10vw;
+            }
+        }
+    }
+
+    footer{
+    #mail{
+        font-size: 1rem;
+    }
+    #subscribe{
+        font-size: 0.9rem;
+        }
+    #signature{
+        font-size: 0.7rem;
+    }
+}
+}

@@ -325,26 +325,32 @@ footer{
 
 /* =================== Media queries for Tablet =================== */
 
-@media only screen and (max-width: 768px){
+@import 'mqtablet.scss';
+
+/* =================== Media queries for Smartphone =================== */
+
+@media only screen and (max-width: 576px){
     h1{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     h2{
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
-
+    
     h3{
-        font-size: 0.8rem;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
     }
     
     p{
-        line-height: 1.5em;
+        line-height: 1.8em;
         font-size: 0.8rem;
     }
     
     .step{
         font-size: 2rem;
+        margin-bottom: 1rem;
     }
     
     .emoji{
@@ -352,47 +358,111 @@ footer{
     }
 
     header{
+        #logo {
+            width: 30px;
+        }
         #titelText{
             article{
-                padding-right: 0px;
+                padding-right: 0;
             }
         }
         #scroll{
-        margin: 0 10vw;
-        padding-bottom: 3vh;
+            padding: 3vh 0;
         }
-    }
-
-    #intro{
-        margin: 2vh 4vw;
-        p{
-            padding-right: 10vw;
-        }
-        h2:last-of-type{
-            padding-right: 20vw;
-            margin-top: 0;
-        }
-    }
-
-    #learn{
-        gap:0;
-        #ready{
-            margin-top: 2vh;
-            p{
-                padding: 0 10vw;
-            }
-        }
-    }
-
-    footer{
-    #mail{
-        font-size: 1rem;
-    }
-    #subscribe{
-        font-size: 0.9rem;
-        }
-    #signature{
-        font-size: 0.7rem;
     }
 }
+@keyframes fallingImg{
+    0%{
+        transform: translateY(-90%);
+    }
+    50%{
+        transform: translateY(-85%);
+    }
+    100%{
+        transform: translateY(-90%);
+    }
+}
+
+#intro{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    p{
+        padding: 0;
+    }
+    h2:last-of-type{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+#learn{
+    display: flex;
+    flex-wrap: wrap;
+    #learnStart{
+        h3{
+            padding-left: 50px;
+        }
+        p{
+            padding-left: 50px;
+        }
+    }
+
+    #learnIdea{
+        h3{
+            padding-left: 50px;
+        }
+        p{
+            padding-left: 50px;
+        }
+    }
+
+    #learnDesign{
+        h3{
+            padding-left: 50px;
+        }
+        p{
+            padding-left: 50px;
+        }
+    }
+
+    #learnShare{
+        h3{
+            padding-left: 50px;
+        }
+        p{
+            padding-left: 50px;
+        }
+    }
+
+    #ready{
+        p{
+            padding: 0;
+        }
+    }
+}
+
+#steps{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        height: 30vh;
+        width: 100%;
+    }
+}
+
+footer{
+    margin: 0 2vw;
+    #mail{
+        padding: 2vh 15vw;
+        font-size: 0.8rem;
+    }
+    #subscribe{
+        font-size: 0.8rem;
+    }
+    
+    #signature{
+        align-self: center;
+        font-size: 0.8rem;
+    }
 }

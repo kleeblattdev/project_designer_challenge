@@ -349,5 +349,117 @@ footer #signature {
     font-size: 0.7rem;
   }
 }
+/* =================== Media queries for Smartphone =================== */
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 0.7rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+  p {
+    line-height: 1.8em;
+    font-size: 0.8rem;
+  }
+  .step {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .emoji {
+    font-size: 2rem;
+  }
+  header #logo {
+    width: 30px;
+  }
+  header #titelText article {
+    padding-right: 0;
+  }
+  header #scroll {
+    padding: 3vh 0;
+  }
+}
+@keyframes fallingImg {
+  0% {
+    transform: translateY(-90%);
+  }
+  50% {
+    transform: translateY(-85%);
+  }
+  100% {
+    transform: translateY(-90%);
+  }
+}
+#intro {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#intro p {
+  padding: 0;
+}
+#intro h2:last-of-type {
+  padding: 0;
+  margin: 0;
+}
+
+#learn {
+  display: flex;
+  flex-wrap: wrap;
+}
+#learn #learnStart h3 {
+  padding-left: 50px;
+}
+#learn #learnStart p {
+  padding-left: 50px;
+}
+#learn #learnIdea h3 {
+  padding-left: 50px;
+}
+#learn #learnIdea p {
+  padding-left: 50px;
+}
+#learn #learnDesign h3 {
+  padding-left: 50px;
+}
+#learn #learnDesign p {
+  padding-left: 50px;
+}
+#learn #learnShare h3 {
+  padding-left: 50px;
+}
+#learn #learnShare p {
+  padding-left: 50px;
+}
+#learn #ready p {
+  padding: 0;
+}
+
+#steps {
+  display: flex;
+  flex-wrap: wrap;
+}
+#steps div {
+  height: 30vh;
+  width: 100%;
+}
+
+footer {
+  margin: 0 2vw;
+}
+footer #mail {
+  padding: 2vh 15vw;
+  font-size: 0.8rem;
+}
+footer #subscribe {
+  font-size: 0.8rem;
+}
+footer #signature {
+  align-self: center;
+  font-size: 0.8rem;
+}
 
 /*# sourceMappingURL=style.css.map */
