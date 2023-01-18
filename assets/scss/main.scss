@@ -1,0 +1,22 @@
+/* color-scheme
+#0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
+
+$colorWhite: #FFF;
+$colorBlack: #000;
+$colorDark: #0b0c17;
+$colorgray: #dddddd;
+$colorPink: #ff3571;
+
+
+/* font-family: 'Roboto', sans-serif; */
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
