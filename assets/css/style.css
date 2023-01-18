@@ -151,13 +151,13 @@ header #scroll {
   gap: 20px;
   grid-template-areas: "articleOne articleTwo" "articleThree articleFour" "readyGo readyGo";
 }
-#learn #learStart, #learn #learnIdea, #learn #learnDesign, #learn #learnShare {
+#learn #learnStart, #learn #learnIdea, #learn #learnDesign, #learn #learnShare {
   padding-right: 8vw;
 }
-#learn #learStart h3, #learn #learnIdea h3, #learn #learnDesign h3, #learn #learnShare h3 {
+#learn #learnStart h3, #learn #learnIdea h3, #learn #learnDesign h3, #learn #learnShare h3 {
   padding-left: 40px;
 }
-#learn #learStart p, #learn #learnIdea p, #learn #learnDesign p, #learn #learnShare p {
+#learn #learnStart p, #learn #learnIdea p, #learn #learnDesign p, #learn #learnShare p {
   padding-left: 40px;
 }
 #learn #learnStart {
