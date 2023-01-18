@@ -1,0 +1,11 @@
+@mixin grid ($d-grid, $cols, $rows){
+    display: $d-grid;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+}
+
+@mixin bgImg($bgImg, $bgRepeat, $bgSize){
+    background-image: $bgImg ;
+    background-repeat: $bgRepeat ;
+    background-size: $bgSize ;
+}

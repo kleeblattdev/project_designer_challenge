@@ -51,7 +51,7 @@ p {
   color: #dddddd;
   font-size: 3rem;
   font-family: "Roboto Bold", sans-serif;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4vh;
 }
 
 .emoji {
@@ -123,10 +123,10 @@ header #scroll {
 
 /* =================== Main - Intro =================== */
 #intro {
-  margin: 5vh 8vw;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 5vh 8vw;
   gap: 30px;
   grid-template-areas: "headline text" "challenge challenge";
 }
@@ -144,56 +144,45 @@ header #scroll {
 }
 
 #learn {
-  margin: 0 8vw 8vh;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 8vw 8vh;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "articleOne articleTwo" "articleThree articleFour" "readyGo readyGo";
+}
+#learn #learStart, #learn #learnIdea, #learn #learnDesign, #learn #learnShare {
+  padding-right: 8vw;
+}
+#learn #learStart h3, #learn #learnIdea h3, #learn #learnDesign h3, #learn #learnShare h3 {
+  padding-left: 40px;
+}
+#learn #learStart p, #learn #learnIdea p, #learn #learnDesign p, #learn #learnShare p {
+  padding-left: 40px;
 }
 #learn #learnStart {
   grid-area: articleOne;
-  padding-right: 8vw;
 }
 #learn #learnStart h3 {
-  padding-left: 40px;
   background: no-repeat url(../img/title02.svg);
-}
-#learn #learnStart p {
-  padding-left: 40px;
 }
 #learn #learnIdea {
   grid-area: articleTwo;
-  padding-right: 8vw;
 }
 #learn #learnIdea h3 {
-  padding-left: 40px;
   background: no-repeat url(../img/title04.svg);
-}
-#learn #learnIdea p {
-  padding-left: 40px;
 }
 #learn #learnDesign {
   grid-area: articleThree;
-  padding-right: 8vw;
 }
 #learn #learnDesign h3 {
-  padding-left: 40px;
   background: no-repeat url(../img/title01.svg);
-}
-#learn #learnDesign p {
-  padding-left: 40px;
 }
 #learn #learnShare {
   grid-area: articleFour;
-  padding-right: 8vw;
 }
 #learn #learnShare h3 {
-  padding-left: 40px;
   background: no-repeat url(../img/title03.svg);
-}
-#learn #learnShare p {
-  padding-left: 40px;
 }
 #learn #ready {
   grid-area: readyGo;
@@ -208,11 +197,11 @@ header #scroll {
 }
 
 #steps {
-  margin: 0 8vw 8vh;
   display: grid;
-  gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  margin: 0 8vw 8vh;
+  gap: 30px;
   grid-template-areas: "imgOne textOne" "textTwo imgTwo" "imgThree textThree" "textFour imgFour";
 }
 #steps #stepImgOne {
@@ -382,84 +371,74 @@ footer #signature {
     padding: 3vh 0;
   }
 }
-@keyframes fallingImg {
-  0% {
-    transform: translateY(-90%);
+@media only screen and (max-width: 576px) {
+  @keyframes fallingImg {
+    0% {
+      transform: translateY(-90%);
+    }
+    50% {
+      transform: translateY(-85%);
+    }
+    100% {
+      transform: translateY(-90%);
+    }
   }
-  50% {
-    transform: translateY(-85%);
+}
+@media only screen and (max-width: 576px) {
+  #intro {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
   }
-  100% {
-    transform: translateY(-90%);
+  #intro p {
+    padding: 0;
+  }
+  #intro h2:last-of-type {
+    padding: 0;
+    margin: 0;
   }
 }
-#intro {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+@media only screen and (max-width: 576px) {
+  #learn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #learn #learnStart h3, #learn #learnIdea h3, #learn #learnDesign h3, #learn #learnShare h3 {
+    padding-left: 60px;
+  }
+  #learn #learnStart p, #learn #learnIdea p, #learn #learnDesign p, #learn #learnShare p {
+    padding-left: 60px;
+  }
+  #learn #ready p {
+    padding: 0;
+  }
 }
-#intro p {
-  padding: 0;
+@media only screen and (max-width: 576px) {
+  #steps {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #steps div {
+    height: 30vh;
+    width: 100%;
+  }
 }
-#intro h2:last-of-type {
-  padding: 0;
-  margin: 0;
-}
-
-#learn {
-  display: flex;
-  flex-wrap: wrap;
-}
-#learn #learnStart h3 {
-  padding-left: 50px;
-}
-#learn #learnStart p {
-  padding-left: 50px;
-}
-#learn #learnIdea h3 {
-  padding-left: 50px;
-}
-#learn #learnIdea p {
-  padding-left: 50px;
-}
-#learn #learnDesign h3 {
-  padding-left: 50px;
-}
-#learn #learnDesign p {
-  padding-left: 50px;
-}
-#learn #learnShare h3 {
-  padding-left: 50px;
-}
-#learn #learnShare p {
-  padding-left: 50px;
-}
-#learn #ready p {
-  padding: 0;
-}
-
-#steps {
-  display: flex;
-  flex-wrap: wrap;
-}
-#steps div {
-  height: 30vh;
-  width: 100%;
-}
-
-footer {
-  margin: 0 2vw;
-}
-footer #mail {
-  padding: 2vh 15vw;
-  font-size: 0.8rem;
-}
-footer #subscribe {
-  font-size: 0.8rem;
-}
-footer #signature {
-  align-self: center;
-  font-size: 0.8rem;
+@media only screen and (max-width: 576px) {
+  footer {
+    margin: 0 2vw;
+  }
+  footer #mail {
+    padding: 2vh 15vw;
+    font-size: 0.8rem;
+  }
+  footer #subscribe {
+    font-size: 0.8rem;
+  }
+  footer #signature {
+    align-self: center;
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
