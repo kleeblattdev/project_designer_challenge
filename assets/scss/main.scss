@@ -23,6 +23,11 @@
     color: #0b0c17;
 }
 
+body{
+    margin: auto;
+    max-width: 1440px;
+}
+
 h1, h2, h3, #scroll{
     font-family: 'Roboto-Bold', sans-serif;
 }
@@ -73,7 +78,7 @@ header{
     }
 
     #logoText{
-        padding: 3vh 5vw;
+        padding: 20px 60px;
         #subtitle{
             font-family: 'Roboto Light';
             display: block;
@@ -125,21 +130,20 @@ header{
 /* =================== Main - Projects =================== */
 
 #projects{
-    width: 100%;
-    height: 60vh;
-    background: no-repeat url(../img/images.jpg) center;
-    background-size: cover;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
+    img{
+        width: 100%;
+    }
 }
 
 /* =================== Main - Intro =================== */
 
 #intro{
-    margin: 0 8vw 8vh;
+    margin: 5vh 8vw;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    gap: 50px;
+    gap: 30px;
     grid-template-areas: 
     "headline text"
     "challenge challenge";
@@ -148,18 +152,19 @@ header{
     }
     p{
         grid-area: text;
-        padding: 1rem 17rem 0 0;
+        padding-right: 18vw;
     }
     h2:last-of-type{
         grid-area: challenge;
-        padding-right: 7em;
+        padding-right: 30vw;
+        margin-top: 5vh;
     }
 }
 
 #learn{
     margin: 0 8vw 8vh;
     display: grid;
-    gap: 50px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "articleOne articleTwo"
@@ -168,7 +173,7 @@ header{
 
     #learnStart{
         grid-area: articleOne;
-        padding-right: 2rem;
+        padding-right: 8vw;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title02.svg);
@@ -180,7 +185,7 @@ header{
 
     #learnIdea{
         grid-area: articleTwo;
-        padding-right: 2rem;
+        padding-right: 8vw;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title04.svg);
@@ -192,7 +197,7 @@ header{
 
     #learnDesign{
         grid-area: articleThree;
-        padding-right: 2rem;
+        padding-right: 8vw;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title01.svg);
@@ -204,7 +209,7 @@ header{
 
     #learnShare{
         grid-area: articleFour;
-        padding-right: 2rem;
+        padding-right: 8vw;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title03.svg);
@@ -217,12 +222,12 @@ header{
     #ready{
         grid-area: readyGo;
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 5vh;
         h2{
             margin-bottom: 1rem;
         }
         p{
-            padding: 0 15rem;
+            padding: 0 18vw;
         }
     }
 }
@@ -318,4 +323,76 @@ footer{
 }
 
 
-/* =================== Media queries for Smartphone =================== */
+/* =================== Media queries for Tablet =================== */
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 0.8rem;
+    }
+    
+    h2{
+        font-size: 2.2rem;
+    }
+
+    h3{
+        font-size: 0.8rem;
+    }
+    
+    p{
+        line-height: 1.5em;
+        font-size: 0.8rem;
+    }
+    
+    .step{
+        font-size: 2rem;
+    }
+    
+    .emoji{
+        font-size: 2rem;
+    }
+
+    header{
+        #titelText{
+            article{
+                padding-right: 0px;
+            }
+        }
+        #scroll{
+        margin: 0 10vw;
+        padding-bottom: 3vh;
+        }
+    }
+
+    #intro{
+        margin: 2vh 4vw;
+        p{
+            padding-right: 10vw;
+        }
+        h2:last-of-type{
+            padding-right: 20vw;
+            margin-top: 0;
+        }
+    }
+
+    #learn{
+        gap:0;
+        #ready{
+            margin-top: 2vh;
+            p{
+                padding: 0 10vw;
+            }
+        }
+    }
+
+    footer{
+    #mail{
+        font-size: 1rem;
+    }
+    #subscribe{
+        font-size: 0.9rem;
+        }
+    #signature{
+        font-size: 0.7rem;
+    }
+}
+}
