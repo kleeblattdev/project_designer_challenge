@@ -1,13 +1,7 @@
 /* color-scheme
 #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
 
-$colorWhite: #FFF;
-$colorBlack: #000;
-$colorDark: #0b0c17;
-$colorgray: #dddddd;
-$colorPink: #ff3571;
-
-
+@import 'variables.scss';
 /* font-family: 'Roboto', sans-serif; */
 
 @font-face {
@@ -26,6 +20,7 @@ $colorPink: #ff3571;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #0b0c17;
 }
 
 h1, h2, h3, #scroll{
@@ -50,6 +45,7 @@ h3{
 
 p{
     line-height: 1.8em;
+    font-size: 1.2rem;
 }
 
 .step{
@@ -98,17 +94,29 @@ header{
         #fallingMan{
             width: 55%;
             transform: translateY(-20%);
+            animation: fallingImg 4s ease-in-out infinite;
         }
     }
-
-/* the img gets an animation of falling */
 
     #scroll{
         color: $colorPink;
         margin-left: 10vw;
         padding-bottom: 8vh;
     }
+}
 
+/* Animation */
+
+@keyframes fallingImg{
+    0%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(-15%);
+    }
+    100%{
+        transform: translateY(-20%);
+    }
 }
 
 
@@ -117,8 +125,8 @@ header{
 /* =================== Main - Projects =================== */
 
 #projects{
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 60vh;
     background: no-repeat url(../img/images.jpg) center;
     background-size: cover;
     margin-bottom: 10vh;
@@ -131,7 +139,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 50px;
+    gap: 50px;
     grid-template-areas: 
     "headline text"
     "challenge challenge";
@@ -160,7 +168,7 @@ header{
 
     #learnStart{
         grid-area: articleOne;
-        padding-right: 12rem;
+        padding-right: 2rem;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title02.svg);
@@ -172,7 +180,7 @@ header{
 
     #learnIdea{
         grid-area: articleTwo;
-        padding-right: 12rem;
+        padding-right: 2rem;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title04.svg);
@@ -184,7 +192,7 @@ header{
 
     #learnDesign{
         grid-area: articleThree;
-        padding-right: 12rem;
+        padding-right: 2rem;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title01.svg);
@@ -196,7 +204,7 @@ header{
 
     #learnShare{
         grid-area: articleFour;
-        padding-right: 12rem;
+        padding-right: 2rem;
         h3{
             padding-left: 40px;
             background: no-repeat url(../img/title03.svg);
@@ -214,15 +222,15 @@ header{
             margin-bottom: 1rem;
         }
         p{
-            padding: 0 20rem;
+            padding: 0 15rem;
         }
     }
 }
 
 #steps{
-    margin: 0 8vw 5vh;
+    margin: 0 8vw 8vh;
     display: grid;
-    row-gap: 3rem;
+    gap: 2rem;
     grid-template-columns: repeat(2,1fr) ;
     grid-template-rows: repeat(4,1fr);
     grid-template-areas: "imgOne textOne"
@@ -237,11 +245,9 @@ header{
     }
     #stepOne{
         grid-area: textOne;
-        padding:0 3rem 8rem;
     }
     #stepTwo{
         grid-area: textTwo;
-        padding:0 3rem 8rem;
     }
     #stepImgTwo{
         grid-area: imgTwo;
@@ -257,11 +263,9 @@ header{
     }
     #stepThree{
         grid-area: textThree;
-        padding:0 3rem 8rem;
     }
     #stepFour{
         grid-area: textFour;
-        padding:0 3rem 8rem;
     }
     #stepImgFour{
         grid-area: imgFour;
@@ -290,21 +294,28 @@ footer{
         padding: 0.6rem 6rem;
         border: none;
         box-shadow: 0px 8px 15px 3px $colorgray;
+        font-size: 1.2rem;
     }
     #subscribe{
+        font-size: 1.2rem;
         display: block;
         margin: 1.5rem auto 4rem;
         color: $colorWhite;
         background-color: $colorPink;
         border: none;
         padding: 10px 40px;
+        cursor: pointer;
+        &:hover{
+            background: linear-gradient(45deg, rgba(255,53,113,1) 0%, rgba(60,48,255,1) 69%);
+        }
     }
+    
     #signature{
         align-self: flex-start;
         margin-left: 8vw;
+        font-size: 1rem;
     }
 }
-
 
 
 /* =================== Media queries for Smartphone =================== */

@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #0b0c17;
 }
 
 h1, h2, h3, #scroll {
@@ -38,6 +39,7 @@ h3 {
 
 p {
   line-height: 1.8em;
+  font-size: 1.2rem;
 }
 
 .step {
@@ -57,7 +59,6 @@ header {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 50%;
-  /* the img gets an animation of falling */
 }
 header #logo {
   position: fixed;
@@ -86,6 +87,7 @@ header #titelText h2 {
 header #titelText #fallingMan {
   width: 55%;
   transform: translateY(-20%);
+  animation: fallingImg 4s ease-in-out infinite;
 }
 header #scroll {
   color: #ff3571;
@@ -93,11 +95,23 @@ header #scroll {
   padding-bottom: 8vh;
 }
 
+/* Animation */
+@keyframes fallingImg {
+  0% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
 /* =================== Main Style =================== */
 /* =================== Main - Projects =================== */
 #projects {
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
   background: no-repeat url(../img/images.jpg) center;
   background-size: cover;
   margin-bottom: 10vh;
@@ -109,7 +123,7 @@ header #scroll {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 50px;
+  gap: 50px;
   grid-template-areas: "headline text" "challenge challenge";
 }
 #intro h2:first-of-type {
@@ -134,7 +148,7 @@ header #scroll {
 }
 #learn #learnStart {
   grid-area: articleOne;
-  padding-right: 12rem;
+  padding-right: 2rem;
 }
 #learn #learnStart h3 {
   padding-left: 40px;
@@ -145,7 +159,7 @@ header #scroll {
 }
 #learn #learnIdea {
   grid-area: articleTwo;
-  padding-right: 12rem;
+  padding-right: 2rem;
 }
 #learn #learnIdea h3 {
   padding-left: 40px;
@@ -156,7 +170,7 @@ header #scroll {
 }
 #learn #learnDesign {
   grid-area: articleThree;
-  padding-right: 12rem;
+  padding-right: 2rem;
 }
 #learn #learnDesign h3 {
   padding-left: 40px;
@@ -167,7 +181,7 @@ header #scroll {
 }
 #learn #learnShare {
   grid-area: articleFour;
-  padding-right: 12rem;
+  padding-right: 2rem;
 }
 #learn #learnShare h3 {
   padding-left: 40px;
@@ -185,13 +199,13 @@ header #scroll {
   margin-bottom: 1rem;
 }
 #learn #ready p {
-  padding: 0 20rem;
+  padding: 0 15rem;
 }
 
 #steps {
-  margin: 0 8vw 5vh;
+  margin: 0 8vw 8vh;
   display: grid;
-  row-gap: 3rem;
+  gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "imgOne textOne" "textTwo imgTwo" "imgThree textThree" "textFour imgFour";
@@ -204,11 +218,9 @@ header #scroll {
 }
 #steps #stepOne {
   grid-area: textOne;
-  padding: 0 3rem 8rem;
 }
 #steps #stepTwo {
   grid-area: textTwo;
-  padding: 0 3rem 8rem;
 }
 #steps #stepImgTwo {
   grid-area: imgTwo;
@@ -224,11 +236,9 @@ header #scroll {
 }
 #steps #stepThree {
   grid-area: textThree;
-  padding: 0 3rem 8rem;
 }
 #steps #stepFour {
   grid-area: textFour;
-  padding: 0 3rem 8rem;
 }
 #steps #stepImgFour {
   grid-area: imgFour;
@@ -256,18 +266,25 @@ footer #mail {
   padding: 0.6rem 6rem;
   border: none;
   box-shadow: 0px 8px 15px 3px #dddddd;
+  font-size: 1.2rem;
 }
 footer #subscribe {
+  font-size: 1.2rem;
   display: block;
   margin: 1.5rem auto 4rem;
   color: #FFF;
   background-color: #ff3571;
   border: none;
   padding: 10px 40px;
+  cursor: pointer;
+}
+footer #subscribe:hover {
+  background: linear-gradient(45deg, rgb(255, 53, 113) 0%, rgb(60, 48, 255) 69%);
 }
 footer #signature {
   align-self: flex-start;
   margin-left: 8vw;
+  font-size: 1rem;
 }
 
 /* =================== Media queries for Smartphone =================== */
