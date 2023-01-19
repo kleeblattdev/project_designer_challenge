@@ -251,7 +251,7 @@ footer {
   text-align: center;
 }
 footer #footerText {
-  margin-bottom: 2rem;
+  margin-bottom: 2vh;
 }
 footer #footerText h2 {
   margin-bottom: 1.5rem;
@@ -263,8 +263,8 @@ footer #mail {
   box-shadow: 0px 8px 15px 3px #dddddd;
   font-size: 1.2rem;
 }
-footer #subscribe {
-  font-size: 1.2rem;
+footer #btnSubscribe, footer #btnBackHome {
+  font-size: 1rem;
   display: block;
   margin: 1.5rem auto 4rem;
   color: #FFF;
@@ -273,8 +273,15 @@ footer #subscribe {
   padding: 10px 40px;
   cursor: pointer;
 }
-footer #subscribe:hover {
+footer #btnSubscribe:hover, footer #btnBackHome:hover {
   background: linear-gradient(45deg, rgb(255, 53, 113) 0%, rgb(60, 48, 255) 69%);
+}
+footer #submitConfirm {
+  display: none;
+  margin: 2vh 8vw;
+  padding: 3vh 6vw;
+  border: none;
+  box-shadow: 0px 8px 15px 3px #dddddd;
 }
 footer #signature {
   align-self: flex-start;

@@ -103,22 +103,28 @@
     <!-- ================== Footer ================== -->
 
     <footer>
-    <!-- ================== Footer - Text ================== -->
-
-        <section id="footerText">
-            <h2>Do you like this challenge?</h2>
-            <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-        </section>
 
     <!-- ================== Footer - Form ================== -->  
-    
-        <form action="">
-            <label for="mail" hidden>E-mail</label>
-            <input type="email" name="mail" id="mail" placeholder="Write your email here">
-            <input type="submit" value="Subscribe" id="subscribe">
-        </form>
-        <p id="signature">Created with Love by a Webdesigner ❤️ </p>
+        <section id="submitMail">
+            <form onsubmit="return false">
+                <article id="footerText">
+                    <h2>Do you like this challenge?</h2>
+                    <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
+                </article>
+                <label for="mail" hidden>E-mail</label>
+                <input type="email" name="mail" id="mail" placeholder="Write your email here">
+                <input type="submit" value="Subscribe" id="btnSubscribe">
+            </form>
+        </section>
+        <section id="submitConfirm">
+            <h3>🥳</h3>
+            <h3>YOUR EMAIL HAS BEEN CONFIRMED.</h3>
+            <h3>THANKS FOR SUBSCRIBING!</h3>
+            <p>Now we just need to confirm your email adress - please click link in the email we sent you. Thanks!</p>
+            <button id="btnBackHome">BACK TO DESIGNERCHALLENGE.COM</button>
+        </section>
 
+        <p id="signature">Created with Love by a Webdesigner ❤️ </p>
     </footer>
     
     <script src="./assets/js/main.js"></script>
