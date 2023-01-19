@@ -91,7 +91,8 @@ header #titelText h2 {
   margin-bottom: 20px;
 }
 header #titelText #fallingMan {
-  width: 55%;
+  max-width: 55%;
+  height: auto;
   transform: translateY(-20%);
   animation: fallingImg 4s ease-in-out infinite;
 }
@@ -383,19 +384,6 @@ footer #signature {
   }
   header #scroll {
     padding: 3vh 0;
-  }
-}
-@media only screen and (max-width: 576px) {
-  @keyframes fallingImg {
-    0% {
-      transform: translateY(-90%);
-    }
-    50% {
-      transform: translateY(-85%);
-    }
-    100% {
-      transform: translateY(-90%);
-    }
   }
 }
 @media only screen and (max-width: 576px) {

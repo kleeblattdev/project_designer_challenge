@@ -92,7 +92,8 @@ header{
             margin-bottom: 20px;
         }
         #fallingMan{
-            width: 55%;
+            max-width: 55%;
+            height: auto;
             transform: translateY(-20%);
             animation: fallingImg 4s ease-in-out infinite;
         }

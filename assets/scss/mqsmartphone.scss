@@ -44,17 +44,6 @@
         }
     }
 }
-@keyframes fallingImg{
-    0%{
-        transform: translateY(-90%);
-    }
-    50%{
-        transform: translateY(-85%);
-    }
-    100%{
-        transform: translateY(-90%);
-    }
-}
 
 #intro{
     display: flex;
